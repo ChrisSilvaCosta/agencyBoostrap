@@ -1,28 +1,40 @@
 /* Fonts */
 :root {
-  --default-font: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --heading-font: "Raleway",  sans-serif;
-  --nav-font: "Poppins",  sans-serif;
+  --default-font: "Roboto", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --heading-font: "Raleway", sans-serif;
+  --nav-font: "Poppins", sans-serif;
 }
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
-:root { 
-  --background-color: #ffffff; /* Background color for the entire website, including individual sections */
-  --default-color: #444444; /* Default color used for the majority of the text content across the entire website */
-  --heading-color: #394047; /* Color for headings, subheadings and title throughout the website */
-  --accent-color: #428bca; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
-  --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
-  --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
+:root {
+  --background-color: #ffffff;
+  /* Background color for the entire website, including individual sections */
+  --default-color: #444444;
+  /* Default color used for the majority of the text content across the entire website */
+  --heading-color: #394047;
+  /* Color for headings, subheadings and title throughout the website */
+  --accent-color: #428bca;
+  /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+  --surface-color: #ffffff;
+  /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
+  --contrast-color: #ffffff;
+  /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
 }
 
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
 :root {
-  --nav-color: #ffffff;  /* The default color of the main navmenu links */
-  --nav-hover-color: #428bca; /* Applied to main navmenu links when they are hovered over or active */
-  --nav-mobile-background-color: #ffffff; /* Used as the background color for mobile navigation menu */
-  --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
-  --nav-dropdown-color: #444444; /* Used for navigation links of the dropdown items in the navigation menu. */
-  --nav-dropdown-hover-color: #428bca; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
+  --nav-color: #ffffff;
+  /* The default color of the main navmenu links */
+  --nav-hover-color: #428bca;
+  /* Applied to main navmenu links when they are hovered over or active */
+  --nav-mobile-background-color: #ffffff;
+  /* Used as the background color for mobile navigation menu */
+  --nav-dropdown-background-color: #ffffff;
+  /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
+  --nav-dropdown-color: #444444;
+  /* Used for navigation links of the dropdown items in the navigation menu. */
+  --nav-dropdown-hover-color: #428bca;
+  /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
 }
 
 /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
@@ -360,15 +372,16 @@ h6 {
 }
 
 .hero .carousel {
- width: 100%;
- min-height: 100vh; /*  viewport Height */
- padding: 0;
- margin: 0;
- position: relative;
- background: var(--background-color);
+  width: 100%;
+  min-height: 100vh;
+  /*  viewport Height */
+  padding: 0;
+  margin: 0;
+  position: relative;
+  background: var(--background-color);
 }
 
-.hero img{
+.hero img {
   position: absolute;
   inset: 0;
   display: block;
@@ -382,7 +395,7 @@ h6 {
   position: absolute;
   inset: 0;
   background-size: cover;
-  background-position: center; 
+  background-position: center;
   background-repeat: no-repeat;
   overflow: hidden;
 
@@ -518,7 +531,7 @@ section,
   .section {
     scroll-margin-top: 50px;
   }
-  
+
 }
 
 /* Global Title */
@@ -694,7 +707,7 @@ section,
   float: left;
 }
 
-.stats .stats-item .purecounter{
+.stats .stats-item .purecounter {
   color: var(--heading-color);
   font-size: 48px;
   display: block;
@@ -711,60 +724,60 @@ Services Section
   margin-bottom: 30px;
 }
 
-.services .service-item{
+.services .service-item {
 
   position: relative;
 }
 
-.services .service-item .icon{
-margin-right: 20px;
+.services .service-item .icon {
+  margin-right: 20px;
 }
 
-.services .service-item .icon i{
+.services .service-item .icon i {
   color: #252525;
   font-size: 40px;
   line-height: 0;
-  }
+}
 
-  /* titulo H4 */
-  .services .service-item .title {
-    color: #2c4660;
-    font-weight: 700;
-    font-size: 22px;
-    margin-bottom: 10px;
-  }
+/* titulo H4 */
+.services .service-item .title {
+  color: #2c4660;
+  font-weight: 700;
+  font-size: 22px;
+  margin-bottom: 10px;
+}
 
-.services .service-item .description{
-    color: #959595;
-    font-style: 15px;
-    margin-bottom: 10px;
-  }
+.services .service-item .description {
+  color: #959595;
+  font-style: 15px;
+  margin-bottom: 10px;
+}
 
-.services .service-item .readmore{
-    display: flex;
-    align-items: center;
-    color: #428bca;
-    font-size: 700;
-    font-weight: 14px;
-  }
+.services .service-item .readmore {
+  display: flex;
+  align-items: center;
+  color: #428bca;
+  font-size: 700;
+  font-weight: 14px;
+}
 
- .services .service-item .readmore i {
-    margin-left: 10px;
-    font-size: 16px;
-    color: #94949479;
-  }
+.services .service-item .readmore i {
+  margin-left: 10px;
+  font-size: 16px;
+  color: #94949479;
+}
 
 .services .service-item:hover .title,
 .services .service-item:hover .readmore,
 .services .service-item:hover .icon i {
-    color: #428bca;
-    transition: all 0.02s ease-in;
-  }
+  color: #428bca;
+  transition: all 0.02s ease-in;
+}
 
-.services .service-item:hover .description{
-    color: #0f426e;
-    transition: all 0.02s ease-in;
-  }
+.services .service-item:hover .description {
+  color: #0f426e;
+  transition: all 0.02s ease-in;
+}
 
 /* ----------------
 # Call to Action Parallax
@@ -776,7 +789,7 @@ margin-right: 20px;
   clip-path: inset(0);
 }
 
-.call-to-action img{
+.call-to-action img {
   position: fixed;
   z-index: 1;
   top: 0;
@@ -793,7 +806,7 @@ margin-right: 20px;
   z-index: 3;
 }
 
-.call-to-action::before{
+.call-to-action::before {
   content: "";
   background-color: rgba(0, 0, 0, 0.219);
   position: absolute;
@@ -801,24 +814,24 @@ margin-right: 20px;
   z-index: 2;
 }
 
-.call-to-action .container{
+.call-to-action .container {
   position: relative;
   z-index: 3;
 }
 
-.call-to-action h3{
+.call-to-action h3 {
   font-size: 30px;
   font-weight: 700;
   text-shadow: 2px 0px 5px #060606;
 }
 
-.call-to-action p{
+.call-to-action p {
   font-size: 18px;
   margin-top: 45px;
   font-weight: 400;
 }
 
-.call-to-action .cta-btn{
+.call-to-action .cta-btn {
   border: 2px solid #e3e0e0;
   padding: 12px 40px;
   color: #e3e0e0;
@@ -831,13 +844,13 @@ margin-right: 20px;
   display: inline-block;
 }
 
-.call-to-action .cta-btn:hover{
+.call-to-action .cta-btn:hover {
   background: #075e54;
-  border: 2px solid #075e54; 
+  border: 2px solid #075e54;
 
 }
 
-.call-to-action .cta-btn-2{
+.call-to-action .cta-btn-2 {
   border: 2px solid #e3e0e0;
   padding: 12px 40px;
   color: #e3e0e0;
@@ -850,13 +863,13 @@ margin-right: 20px;
   display: inline-block;
 }
 
-.call-to-action .cta-btn-2:hover{
+.call-to-action .cta-btn-2:hover {
   background: #962fbf;
-  border: 2px solid #962fbf; 
+  border: 2px solid #962fbf;
 
 }
 
-.call-to-action .cta-btn-3{
+.call-to-action .cta-btn-3 {
   border: 2px solid #e3e0e0;
   padding: 12px 40px;
   color: #e3e0e0;
@@ -869,9 +882,9 @@ margin-right: 20px;
   display: inline-block;
 }
 
-.call-to-action .cta-btn-3:hover{
+.call-to-action .cta-btn-3:hover {
   background: #0077B5;
-  border: 2px solid #0077B5; 
+  border: 2px solid #0077B5;
 
 }
 
@@ -879,7 +892,8 @@ margin-right: 20px;
 # Portfolio // Galeria // Produtos
 ------------------- */
 
-.portfolio .portfolio-filters { /* UL */
+.portfolio .portfolio-filters {
+  /* UL */
   padding: 0;
   margin: 0 auto 20px auto;
   text-align: center;
@@ -899,7 +913,7 @@ margin-right: 20px;
 }
 
 .portfolio .portfolio-filters li:hover,
-.portfolio .portfolio-filters li .filter-active{
+.portfolio .portfolio-filters li .filter-active {
   color: #428bca;
   font-weight: 600;
   transition: .3s ease-in-out;
@@ -910,9 +924,7 @@ margin-right: 20px;
   overflow: hidden;
 }
 
-.portfolio .portfolio-content img {
-
-}
+.portfolio .portfolio-content img {}
 
 /* Estrutura dos Icones */
 .portfolio .portfolio-content .portfolio-info {
@@ -926,7 +938,7 @@ margin-right: 20px;
 
 }
 
-.portfolio .portfolio-content:hover img{
+.portfolio .portfolio-content:hover img {
   transform: scale(1.1);
 }
 
@@ -941,12 +953,88 @@ margin-right: 20px;
   line-height: 1.2;
 }
 
-.portfolio .portfolio-content .portfolio-info .details-link{
+.portfolio .portfolio-content .portfolio-info .details-link {
   left: 50%;
   font-size: 30px;
   line-height: 0;
-  
+
 }
+
+/* ----------------
+#Feedbacks
+------------------- */
+
+.feedbacks .feedback-item {
+  background-color: #fff;
+  box-shadow: 0px 2px 5px 5px #00000025;
+  padding: 30px;
+  position: relative;
+  height: 100%;
+}
+
+.feedbacks .feedback-item .feedback-img {
+  width: 90px;
+  border-radius: 50px;
+  float: left;
+  margin: 0 20px 0 0;
+}
+
+.feedbacks .feedback-item h3 {
+  font-size: 18px;
+  color: #262626c6;
+  margin: 10px 0 5px 0;
+}
+
+.feedbacks .feedback-item h4 {
+  font-size: 14px;
+  color: #060606b8;
+  margin: 0;
+}
+
+.feedbacks .feedback-item h5 {
+  font-size: 12px;
+  color: #060606a0;
+  margin: 5px 0 5px 0;
+}
+
+.feedbacks .feedback-item .stars {
+  margin: 10px 0;
+}
+
+.feedbacks .feedback-item .stars i {
+  color: #ffc107;
+  margin: 0 1px;
+}
+
+.feedbacks .feedback-item .quote-icon-left,
+.feedbacks .feedback-item .quote-icon-right {
+  color: #1777d8a1;
+  font-size: 20px;
+  line-height: 0;
+}
+
+.feedbacks .feedback-item .quote-icon-left  {
+  position: relative;
+  left: -5px;
+  display: inline-block;
+}
+
+.feedbacks .feedback-item .quote-icon-right  {
+  position: relative;
+  right: -5px;
+  display: inline-block;
+  transform: scale(-1);
+}
+
+.feedbacks .feedback-item p {
+  padding: 0;
+  margin: 15px 0 0 0;
+}
+
+
+/* ----------------
+# Team Section
+------------------- */
 
 
 /* ----------------
@@ -963,25 +1051,25 @@ Scroll to TOP
   height: 40px;
   border-radius: 4px;
   transition: all 0.04ms;
-  opacity: 0; 
-  visibility: hidden; 
+  opacity: 0;
+  visibility: hidden;
   box-shadow: 0px 0px 5px #060606;
 }
 
-.scroll-top.active{
+.scroll-top.active {
   visibility: visible;
   opacity: 1;
 }
 
-.scroll-top i{
+.scroll-top i {
   color: #f9f9f9;
   font-size: 24px;
 }
 
-.scroll-top:hover{
+.scroll-top:hover {
   background-color: #f9f9f9;
 }
 
-.scroll-top i:hover{
-color: #428bca;
+.scroll-top i:hover {
+  color: #428bca;
 }
