@@ -901,7 +901,6 @@ Services Section
 }
 
 .portfolio .portfolio-filters li {
-
   display: inline-block;
   cursor: pointer;
   padding: 0;
@@ -924,7 +923,10 @@ Services Section
   overflow: hidden;
 }
 
-.portfolio .portfolio-content img {}
+.portfolio .portfolio-content img {
+  transition: all .3s ease-in-out;
+
+}
 
 /* Estrutura dos Icones */
 .portfolio .portfolio-content .portfolio-info {
@@ -933,7 +935,7 @@ Services Section
   z-index: 3;
   padding: 15px;
   transition: all .3s ease-in-out;
-  /* opacity: 0; Voltar */
+  opacity: 0; 
   background: rgba(0, 0, 0, 0.461);
 
 }
@@ -957,7 +959,10 @@ Services Section
   left: 50%;
   font-size: 30px;
   line-height: 0;
+}
 
+.portfolio .portfolio-content:hover .portfolio-info{
+  opacity: 1;
 }
 
 /* ----------------
@@ -1043,10 +1048,70 @@ Services Section
 
 .team .member .member-info {
   position: absolute;
-  opacity: 0;
+  opacity: 0; /* Voltar Aqui */
   inset: 0;
   transition: all .2s ease-in;
 }
+
+.team .member .member-info .member-info-content {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 10px;
+  transition: bottom 0.4s;
+}
+
+.team .member .member-info .member-info-content h3 {
+  color: #ffffff;
+  font-weight: 700;
+  margin-bottom: 2px;
+  font-size: 22px;
+}
+
+.team .member .member-info-content span{
+  font-style: italic;
+  color: #ffffff;
+  display: block;
+  font-size: 16px;
+}
+
+.team .member .social {
+  position: absolute;
+  left: 0;
+  bottom: -38px;
+  right: 0;
+  height: 48px;
+  transition: bottom ease-in-out 0.4s;
+}
+
+.team .member .social a {
+  color: #ffffff;
+  display: inline-block;
+  margin: 0 10px;
+  transition: color 0.3s;
+}
+
+.team .member .social a:hover {
+  color: #fff;
+}
+
+.team .member:hover .member-info {
+  opacity: 1;
+  transition: 0.4s;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.8) 20%,  rgba(255, 255, 255, 0) 100% );
+}
+
+.team .member:hover .member-info-content {
+  bottom: 60px;
+  transition: bottom 0.4s;
+}
+
+.team .member:hover .social{
+  bottom: 0;
+  transition: bottom ease-in-out 0.4s;
+}
+
+
 
 /* ----------------
 Scroll to TOP
