@@ -961,7 +961,7 @@ Services Section
   line-height: 0;
 }
 
-.portfolio .portfolio-content:hover .portfolio-info{
+.portfolio .portfolio-content:hover .portfolio-info {
   opacity: 1;
 }
 
@@ -1035,7 +1035,6 @@ Services Section
   padding: 0;
   margin: 15px 0 0 0;
 }
-
 
 /* ----------------
 # Team // Equipe
